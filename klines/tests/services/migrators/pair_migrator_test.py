@@ -7,8 +7,9 @@ my_vcr = vcr.VCR(
     decode_compressed_response=True,
     cassette_library_dir='fixtures/cassettes',
     record_mode='once',
-    match_on=['uri', 'method'],
+    match_on=['uri', 'method']
 )
+
 
 @pytest.mark.django_db
 @my_vcr.use_cassette()
@@ -19,19 +20,20 @@ def test_pairs_creation():
 
     assert pairs.count() == 2
 
-    ## First pair
+    # First pair
     pair = pairs[0]
 
     assert pair.symbol == 'BTCUSDT'
     assert pair.base_asset == 'BTC'
     assert pair.quote_asset == 'USDT'
 
-    ## Second pair
+    # Second pair
     pair = pairs[1]
 
     assert pair.symbol == 'ETHUSDT'
     assert pair.base_asset == 'ETH'
     assert pair.quote_asset == 'USDT'
+
 
 @pytest.mark.django_db
 @my_vcr.use_cassette('fixtures/cassettes/test_pairs_creation')
@@ -44,14 +46,14 @@ def test_pairs_creation_with_existing_pair():
 
     assert pairs.count() == 2
 
-    ## First pair
+    # First pair
     pair = pairs[0]
 
     assert pair.symbol == 'BTCUSDT'
     assert pair.base_asset == 'BTC'
     assert pair.quote_asset == 'USDT'
 
-    ## Second pair
+    # Second pair
     pair = pairs[1]
 
     assert pair.symbol == 'ETHUSDT'
