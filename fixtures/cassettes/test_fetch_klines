@@ -1,0 +1,215 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87
+        Safari/537.36
+      X-MBX-APIKEY:
+      - apikey
+    method: GET
+    uri: https://api.binance.com/api/v3/ping
+  response:
+    body:
+      string: '{}'
+    headers:
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Security-Policy:
+      - default-src 'self'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 03 Aug 2021 12:46:33 GMT
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      Via:
+      - 1.1 468eeec33a1dbb9d71a79cbde5838d78.cloudfront.net (CloudFront)
+      X-AmzAmz-Cf-Id:
+      - pBb5Uf2NEbbY26Hp2R9xAhWaH_lRxtihs1a53v973TwFDv2gIw_jBg==
+      X-Amz-Cf-Pop:
+      - CDG52-P1
+      X-Cache:
+      - Miss from cloudfront
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-WebKit-CSP:
+      - default-src 'self'
+      X-Xss-Protection:
+      - 1; mode=block
+      x-mbx-used-weight:
+      - '4'
+      x-mbx-used-weight-1m:
+      - '4'
+      x-mbx-uuid:
+      - 2e7958f0-4f5c-49d8-b6a4-68edccdfeefb
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87
+        Safari/537.36
+      X-MBX-APIKEY:
+      - apikey
+    method: GET
+    uri: https://api.binance.com/api/v3/klines?endTime=1627999932000&interval=1w&limit=1&startTime=0&symbol=BTCUSDT
+  response:
+    body:
+      string: '[[1502668800000,"4261.48000000","4485.39000000","3850.00000000","4086.29000000","2843.43142600",1503273599999,"12021576.48265154",13134,"2240.24924000","9482742.92094674","10125.41408414"]]'
+    headers:
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '189'
+      Content-Security-Policy:
+      - default-src 'self'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 03 Aug 2021 12:46:33 GMT
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      Via:
+      - 1.1 468eeec33a1dbb9d71a79cbde5838d78.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - amz-cf-id
+      X-Amz-Cf-Pop:
+      - CDG52-P1
+      X-Cache:
+      - Miss from cloudfront
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-WebKit-CSP:
+      - default-src 'self'
+      X-Xss-Protection:
+      - 1; mode=block
+      x-mbx-used-weight:
+      - '5'
+      x-mbx-used-weight-1m:
+      - '5'
+      x-mbx-uuid:
+      - cf8e9ad8-d791-4490-86e7-6d5b4daf7ba3
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87
+        Safari/537.36
+      X-MBX-APIKEY:
+      - bzPSgmT9UHTQMMH3c13MyGcKEafsyH2Pd6SsNtqsvks7n1FgTjNHOOBkKW0wgYoN
+    method: GET
+    uri: https://api.binance.com/api/v3/klines?interval=1w&limit=500&startTime=1626652800000&symbol=BTCUSDT
+  response:
+    body:
+      string: '[[1626652800000,"31778.57000000","35398.00000000","29278.00000000","35381.02000000","383262.21715400",1627257599999,"12281627047.30479809",8161443,"190582.26431200","6114235359.36328810","0"],[1627257600000,"35381.02000000","42599.00000000","35205.78000000","39845.44000000","568598.50960600",1627862399999,"22398899801.82214972",14294722,"284420.13774100","11205247089.66657187","0"],[1627862400000,"39850.27000000","40480.01000000","37703.75000000","38284.40000000","83977.18127400",1628467199999,"3289425694.23281569",1893059,"40328.80111800","1580139135.07549440","0"]]'
+    headers:
+      Access-Control-Allow-Methods:
+      - GET, HEAD, OPTIONS
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Security-Policy:
+      - default-src 'self'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 03 Aug 2021 12:46:34 GMT
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Server:
+      - nginx
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains
+      Via:
+      - 1.1 468eeec33a1dbb9d71a79cbde5838d78.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - amz-cf-id
+      X-Amz-Cf-Pop:
+      - CDG52-P1
+      X-Cache:
+      - Miss from cloudfront
+      X-Content-Security-Policy:
+      - default-src 'self'
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-WebKit-CSP:
+      - default-src 'self'
+      X-Xss-Protection:
+      - 1; mode=block
+      content-length:
+      - '573'
+      x-mbx-used-weight:
+      - '6'
+      x-mbx-used-weight-1m:
+      - '6'
+      x-mbx-uuid:
+      - 7f3dc14a-c8dc-4007-af1c-db0bebc03707
+    status:
+      code: 200
+      message: OK
+version: 1
